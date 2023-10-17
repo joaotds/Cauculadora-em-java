@@ -50,13 +50,15 @@ public class Exec {
 				break;
 			}
 			
-			System.out.println("Informe o primeiro numero");
-			calc.setNumA(Integer.parseInt(sc.nextLine()));
-			System.out.println("Informe o segundo numero");
-			calc.setNumB(Integer.parseInt(sc.nextLine()));
-			calc.calcular();
-			System.out.println("O RESULTADO É: ");
-			System.out.println(calc.calcular());
+			if(opcao != 0) {
+				System.out.println("Informe o primeiro numero");
+				calc.setNumA(Integer.parseInt(sc.nextLine()));
+				System.out.println("Informe o segundo numero");
+				calc.setNumB(Integer.parseInt(sc.nextLine()));
+				calc.calcular();
+				System.out.println("O RESULTADO É: ");
+				System.out.println(calc.calcular());
+			}
 			
 	} while(opcao != 0);
 
@@ -64,3 +66,4 @@ public class Exec {
 	
 }
 		
+
